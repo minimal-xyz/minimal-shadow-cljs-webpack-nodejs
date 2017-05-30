@@ -3,4 +3,4 @@
 
 (.log js/console "Loading lib.cljs")
 
-(def lib-data "Edit lib.cljs to change 2!")
+(def lib-data "Edit lib.cljs to change 4!")
