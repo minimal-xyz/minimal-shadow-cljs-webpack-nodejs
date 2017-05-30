@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "dev": "webpack-dev-server --hot-only",
+    "dev": "webpack --watch",
     "cljs-once": "shadow-cljs --release",
     "cljs": "shadow-cljs --dev",
     "test": "echo \"Error: no test specified\" && exit 1"
