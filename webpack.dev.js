@@ -3,7 +3,6 @@ var fs = require("fs");
 var path = require("path");
 var resolve = require("path").resolve;
 var webpack = require("webpack");
-var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var nodeModules = {};
 
@@ -15,7 +14,7 @@ fs.readdirSync('node_modules').filter((x) => {
 
 module.exports = {
   entry: {
-    main: './lib/page.js'
+    main: ['webpack/hot/poll?1000', './lib/page.js']
   },
   target: 'node',
   devServer: {
@@ -32,8 +31,7 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
-    new UglifyJSPlugin
+    new webpack.NamedModulesPlugin()
   ],
   externals: nodeModules
 };

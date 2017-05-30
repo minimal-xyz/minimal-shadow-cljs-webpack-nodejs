@@ -4,15 +4,18 @@
   "description": "",
   "main": "",
   "scripts": {
-    "dev": "webpack --watch",
-    "cljs-once": "shadow-cljs --release",
+    "dev": "webpack --config webpack.dev.js --watch",
+    "bundle": "webpack --progress",
+    "cljs-once": "shadow-cljs --once",
     "cljs": "shadow-cljs --dev",
+    "build": "yarn cljs-once && yarn bundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "shadow-cljs": "^0.6.0",
+    "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   },

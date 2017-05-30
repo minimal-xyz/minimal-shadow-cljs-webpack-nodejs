@@ -21,10 +21,14 @@ Edit `src/client/lib.cljs` to see hot replacing.
 
 * Build
 
-To get optimized ClojureScript compilation result:
+```bash
+yarn build
+```
+
+To get optimized ClojureScript compilation result(need externs support):
 
 ```bash
-yarn cljs-once
+shadow-cljs --release
 ```
 
 > In real-world projects, you may need to config externs to make `:advanced` mode work.
