@@ -6,30 +6,17 @@
   "scripts": {
     "dev": "webpack --config webpack.dev.js --watch",
     "bundle": "webpack --progress",
-    "cljs-once": "shadow-cljs --once",
-    "cljs": "shadow-cljs --dev",
-    "build": "yarn cljs-once && yarn bundle",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cljs-once": "shadow-cljs -b app --once",
+    "cljs": "shadow-cljs -b app --dev",
+    "build": "yarn cljs-once && yarn bundle"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "shadow-cljs": "^0.6.0",
+    "shadow-cljs": "^0.9.4",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
-  },
-  "shadow-cljs": {
-    "source-paths": [
-      "src"
-    ],
-    "output-dir": "compiled",
-    "dependencies": [
-      [
-        "mvc-works/hsl",
-        "0.1.2"
-      ]
-    ]
   },
   "dependencies": {
     "hsl": "^0.1.1"
