@@ -1,7 +1,8 @@
 
-[Deprecated] ClojureScript Node.js HMR with Webpack based on [shadow-cljs](https://github.com/thheller/shadow-cljs/wiki/ClojureScript-for-JS-Devs)
+[Deprecated]
 ---
 
+> ClojureScript Node.js HMR with Webpack based on [shadow-cljs](https://github.com/thheller/shadow-cljs/wiki/ClojureScript-for-JS-Devs)
 > It's simpler to do HMR with shadow-cljs alone https://github.com/minimal-xyz/minimal-shadow-cljs-nodejs
 
 ### Guide
