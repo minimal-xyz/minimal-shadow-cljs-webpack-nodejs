@@ -14,6 +14,7 @@ fs.readdirSync('node_modules').filter((x) => {
 });
 
 module.exports = {
+  mode: 'development',
   entry: {
     main: './lib/page.js'
   },

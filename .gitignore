@@ -3,3 +3,5 @@ node_modules/
 target/
 dist/*.js
 dist/*.json
+.shadow-cljs/
+.nrepl-port

@@ -13,6 +13,7 @@ fs.readdirSync('node_modules').filter((x) => {
 });
 
 module.exports = {
+  mode: 'development',
   entry: {
     main: ['webpack/hot/poll?1000', './lib/page.js']
   },
